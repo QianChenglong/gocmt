@@ -62,9 +62,6 @@ func parseFile(fset *token.FileSet, filePath, template string) (af *ast.File, mo
 
 			case token.TYPE:
 				ts := typ.Specs[0].(*ast.TypeSpec)
-				if !ts.Name.IsExported() {
-					return true
-				}
 				addTypeSpecComment(typ, ts, commentTemplate)
 			default:
 				return true
