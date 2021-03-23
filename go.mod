@@ -1,4 +1,4 @@
-module github.com/cuonglm/gocmt
+module github.com/QianChenglong/gocmt
 
 go 1.13
 
